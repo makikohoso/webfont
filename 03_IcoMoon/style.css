@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'ico_arrow';
+	src:url('fonts/ico_arrow.eot');
+	src:url('fonts/ico_arrow.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ico_arrow.woff') format('woff'),
+		url('fonts/ico_arrow.ttf') format('truetype'),
+		url('fonts/ico_arrow.svg#ico_arrow') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'ico_arrow';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="ico-"] {
+*/
+.ico-arrow_bottom, .ico-arrow_left, .ico-arrow_right, .ico-arrow_top {
+	font-family: 'ico_arrow';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.ico-arrow_bottom:before {
+	content: "\2193";
+}
+.ico-arrow_left:before {
+	content: "\2190";
+}
+.ico-arrow_right:before {
+	content: "\2192";
+}
+.ico-arrow_top:before {
+	content: "\2191";
+}
